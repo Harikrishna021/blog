@@ -11,8 +11,8 @@ export default function Home() {
             <p className="text-lg text-gray-700 mb-4">
               Massa urna magnis dignissim id euismod porttitor vitae etiam viverra nunc at adipiscing sit morbi aliquet mauris porttitor nisi, senectus pharetra, ac porttitor orci.
             </p>
-            <a href="/blog/posts" className={`outline outline-1 outline-offset-2 border-purple-700 text-purple-700 hover:text-white py-2 px-4 rounded hover:bg-purple-800 md:w-auto ${styles.fit_content}`}>
-              Go to Blog
+            <a href="/blog/posts" className={`outline outline-1 outline-offset-2 border-green-700 text-green-700 hover:text-white py-2 px-4 rounded hover:bg-purple-800 md:w-auto ${styles.fit_content}`}>
+              Read More blog
             </a>
           </div>
           <div className="relative flex justify-center items-center">
