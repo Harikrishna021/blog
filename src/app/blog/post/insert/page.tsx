@@ -100,7 +100,12 @@ export default function Page() {
   return (
     <div className="bg-white p-8 rounded shadow">
       <h2 className="text-2xl mb-4 text-purple-700">New Blog Post</h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form
+        onSubmit={() => {
+          handleSubmit;
+        }}
+        className="space-y-4"
+      >
         <div>
           <label htmlFor="title" className="block font-medium">
             Title:
@@ -123,7 +128,9 @@ export default function Page() {
             name="content"
             rows={4}
             value={postContent}
-            onChange={handleChange}
+            onChange={() => {
+              handleChange;
+            }}
             className="w-full border-2 border-purple-100 p-2 rounded-md focus:border-purple-200 focus:outline-none"
           ></textarea>
           {generating && (
