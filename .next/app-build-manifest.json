@@ -17,10 +17,25 @@
       "static/chunks/main-app.js",
       "static/chunks/app/blog/posts/page.js"
     ],
+    "/blog/posts/error": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/blog/posts/error.js"
+    ],
+    "/blog/posts/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/blog/posts/loading.js"
+    ],
     "/blog/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/blog/layout.js"
+    ],
+    "/blog/post/insert/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/blog/post/insert/page.js"
     ]
   }
 }
