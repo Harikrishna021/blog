@@ -1,22 +1,25 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/app/ui/components/avatar"
-import { Button } from "@/app/ui/components/button"
-import { auth } from "../../../../../auth.config"
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/app/ui/components/avatar";
+import { Button } from "@/app/ui/components/button";
+import { auth } from "../../../../../auth.config";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
-} from "@/app/ui/components/dropdown-menu"
-import { SignIn, SignOut } from "./auth-component"
+} from "@/app/ui/components/dropdown-menu";
+import { SignIn, SignOut } from "./auth-component";
 
 export default async function UserButton() {
-  const session = await auth()
+  const session = await auth();
 
-  if (!session?.user) return <SignIn />
+  if (!session?.user) return <SignIn />;
   return (
     <div className="flex gap-2 items-center">
-
       <span className="hidden text-sm sm:inline-flex">
         {session.user.email}
       </span>
@@ -52,5 +55,5 @@ export default async function UserButton() {
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
-  )
+  );
 }
